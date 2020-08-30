@@ -1,13 +1,15 @@
 var cuentas = [
-    { nombre: "MALI", saldo: 200, password: 'helloworld' },
-    { nombre: "GERA", saldo: 290, password: "l33t" },
-    { nombre: "MAUI", saldo: 67, password: "123" },
-    { nombre: "SANDRA", saldo: 300, password: '4321' }
+    { nombre: "MALI", saldo: 200, password: 'helloworld', genero: 'feminino'},
+    { nombre: "GERA", saldo: 290, password: "l33t", genero:'femenino'},
+    { nombre: "MAUI", saldo: 67, password: "123", genero:'masculino' },
+    { nombre: "SANDRA", saldo: 300, password: "4321", genero:'femenino' },
+    { nombre: "LUISA", saldo: 500, password: "1234", genero:'femenino' }
   ];
 
 var usuario = document.getElementById("user");
 var contra = document.getElementById("password");
 var boton = document.getElementById("botoncito");
+
 var pos;
 var passwordCuenta = contra;
 var validar = false;
@@ -17,7 +19,7 @@ boton.addEventListener("click", cajero);
 
 
   function pedirPassword(){
-      passwordCuenta = password.value;
+      passwordCuenta = passwordCuenta.value;
       return passwordCuenta;
   }
 
@@ -34,27 +36,45 @@ boton.addEventListener("click", cajero);
       if (validar == true) {
         passwordCuenta = pedirPassword();
       } else {
-        añadirtexto("p","*Nombre de usuario incorrecto*","veri_user");
+        añadirtexto("p","*Nombre de usuario incorrecto*","veri_user",'color:white;');
       }
 
         if (passwordCuenta === cuentas[pos].password){
-          añadirtexto("h1","Bienvenido " + cuentas[pos].nombre,"welcome");
-          añadirtexto("saldo","Su saldo es de: " + cuentas[pos].saldo,"saldo");
+          var conte = document.getElementById("contenedor");
+          conte.style.cssText = 'display:none;';
+          var s = document.getElementById("colorcito");
+          s.style.cssText = 'display:block;';
+          
           } else{
-            añadirtexto("p","*Contraseña incorrecta*","veri_password");
+            añadirtexto("p","*Contraseña incorrecta*","veri_password",'color:white;');
+      } 
+      var sexo = "femenino";
+      if (cuentas[pos].genero == sexo ) {
+        añadirtexto("h2","Bienvenida " + cuentas[pos].nombre,"welcome",'color:white;');
+      } else {
+        añadirtexto("h2","Bienvenido " + cuentas[pos].nombre,"welcome",'color:white;');
       }
+       
         return null;
   }
   
-  añadirtexto = function(etiqueta,texto,veri) {
+  añadirtexto = function(etiqueta,texto,veri,color) {
       var verificacion = document.createElement(etiqueta);
-      verificacion.style.cssText = 'color:red;';
+      verificacion.style.cssText = color;
       var x = document.createTextNode(texto);
       verificacion.appendChild(x);
       document.getElementById(veri).appendChild(verificacion);
   }
 
 
+
+var ingresar = document.getElementById("ingresar_saldo");
+var retirar = document.getElementById("retirar_saldo");
+var consu = document.getElementById("consultar_saldo");
+
+ingresar.addEventListener("click", cajeroDeposito);
+retirar.addEventListener("click", cajeroRetiro);
+consu.addEventListener("click", consultarSuSaldo);
 
   function cajeroRetiro(){
     valorRetiro = prompt("Ingrese valor a retirar: ");
@@ -87,3 +107,7 @@ boton.addEventListener("click", cajero);
     return null;
   }
 
+  function consultarSuSaldo() {
+    alert("Su saldo es de: " + cuentas[pos].saldo)
+  }
+  

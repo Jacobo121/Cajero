@@ -1,3 +1,87 @@
+/* body {
+	background-color: gray;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#colorcito {
+	background-color: #a1cdec;
+	margin: 40px;
+    margin-top: 80px;
+	padding: 34px;
+	margin-right: 435px;
+	margin-left: 90px;
+	-webkit-box-shadow: 0px 0px 26px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 26px 2px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 26px 2px rgba(0,0,0,0.75);
+}
+
+#contenedor {
+	text-align: center;
+	padding: 23px;
+}
+
+#atm {
+	text-align: center;
+	font-size: 60px;
+    margin-top: -117px;
+}
+
+#botoncito {
+	background-color: rgba(255, 255, 255, 0.2);
+	border: none;
+	border-radius: 25px;
+	color: black;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 'Muli', sans-serif;	
+	height: 50px;
+	letter-spacing: 1px;
+	outline: none;
+	margin: 10px 0px; 
+	width: 200px;
+}
+
+#botoncito:hover {
+	transition-duration: 5ms;
+	background-color: rgba(255, 255, 255, 0.541);
+}
+
+#user {
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+	border-left: 0px;
+	border-top: 0px;
+	border-right: 0px;
+	border-bottom: 2px solid white;
+	height: 50px;
+	font-family: 'Muli', sans-serif;
+	font-size: 16px;
+	margin-bottom: 20px;
+	padding: 0px 20px;
+	outline: none;
+	color: white;	
+}
+
+#password {
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+	border-left: 0px;
+	border-top: 0px;
+	border-right: 0px;
+	border-bottom: 2px solid white;
+	height: 50px;
+	font-family: 'Muli', sans-serif;
+	font-size: 16px;
+	margin-bottom: 20px;
+	padding: 0px 20px;
+	outline: none;
+	color: white;	
+} */
+
+
+
+
 body {
 	margin: 0;
 	font-family: 'Muli', sans-serif;	
@@ -100,7 +184,22 @@ body {
 	text-decoration: underline;
 }
 
-.input {
+#user {
+	background-color: transparent;
+	border-left: 0px;
+	border-top: 0px;
+	border-right: 0px;
+	border-bottom: 2px solid white;
+	height: 50px;
+	font-family: 'Muli', sans-serif;
+	font-size: 16px;
+	margin-bottom: 20px;
+	padding: 0px 20px;
+	outline: none;
+	color: white;	
+}
+
+#password {
 	background-color: transparent;
 	border-left: 0px;
 	border-top: 0px;
@@ -119,7 +218,7 @@ body {
 	color: white;
 }
 
-.button {
+#botoncito {
 	background-color: rgba(255, 255, 255, 0.2);
 	border: none;
 	border-radius: 25px;
@@ -134,7 +233,7 @@ body {
 	margin: 10px 0px; 
 }
 
-.button:hover {
+#botoncito:hover {
 	transition: 450ms;
 	background-color: #305a5b;
 }
@@ -179,3 +278,68 @@ body {
 	color: white;
 	font-size: 16px;
 }
+
+.title {
+	text-align: center;
+}
+
+#consultar_saldo {
+	background-color: rgba(255, 255, 255, 0.2);
+	border: none;
+	border-radius: 25px;
+	color: white;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 'Muli', sans-serif;	
+	height: 50px;
+	letter-spacing: 1px;
+	outline: none;
+	margin: 10px 0px; 
+}
+
+#consultar_saldo:hover {
+	transition: 450ms;
+	background-color: #305a5b;
+}
+
+#retirar_saldo {
+	background-color: rgba(255, 255, 255, 0.2);
+	border: none;
+	border-radius: 25px;
+	color: white;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 'Muli', sans-serif;	
+	height: 50px;
+	letter-spacing: 1px;
+	outline: none;
+	margin: 10px 0px; 
+}
+
+#retirar_saldo:hover {
+	transition: 450ms;
+	background-color: #305a5b;
+}
+
+#ingresar_saldo {
+	background-color: rgba(255, 255, 255, 0.2);
+	border: none;
+	border-radius: 25px;
+	color: white;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 'Muli', sans-serif;	
+	height: 50px;
+	letter-spacing: 1px;
+	outline: none;
+	margin: 10px 0px; 
+}
+
+#ingresar_saldo:hover {
+	transition: 450ms;
+	background-color: #305a5b;
+}
+
