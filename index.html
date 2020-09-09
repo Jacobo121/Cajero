@@ -1,97 +1,107 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Cajero Automatico</title>
-	<link rel="stylesheet" href="estilos.css">
-</head>
-<body>
-	<!-- <div id="colorcito">
-		<h1 id="atm">ATM</h1>
-		<div id="contenedor" style="display:block;">
-			<h2 id="texto_usuario">Ingresa Tu Nombre</h2>
-			<p id="veri_user"></p>
-			<input type="text" id="user">
-			<h2 id="texto_password">Ingresa Tu Contraseña</h2>
-			<p id="veri_password"></p>
-			<input type="text" id="password"><br>
-			<input type="button" id="botoncito" value="Ingresar">
-		</div>
-	
-		<h1 id="welcome"></h1>
-		<input type="button" id="consultar_saldo" value="consultar saldo" >
-		<p id="imprimir"></p>
-	</div> -->
 
-<!-- inicio de sesion -->
-<div id="contenedor" style="display: block;">
-	<header class="header">
-		<!-- <img class="header__img" src="./IMG/Music.png"> -->
-	</header>
-	<section class="login">
-		<div class="login__container">
-			<h2 class="title">Inicia sesion</h2>
-			<form class="login__container--form" >
-				<p id="veri_user"></p>
-				<input id="user" type="text" placeholder="Correo">
-				<p id="veri_password"></p>
-				<input id="password" type="password" placeholder="Contraseña">
-				<!-- <button id="botoncito" class="button">Iniciar sesion</button -->
-				<input type="button" id="botoncito" value="Iniciar Sesion" >
-				<div class="login__container--remember-me">
-					<label>
+<head>
+    <meta charset="utf-8">
+    <title>Cajero Automatico</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- inicio de sesion -->
+    <div id="contenedor" style="display: block;">
+        <section class="login">
+            <div class="login__container">
+                <h2 class="title">Cajero Automatico</h2>
+                <form class="login__container--form">
+                    <p id="veri_user"></p>
+                    <input id="user" type="text" placeholder="Nombre De Usuario">
+                    <p id="veri_password"></p>
+                    <input id="password" type="password" placeholder="Contraseña">
+                    <!-- <button id="botoncito" class="button">Iniciar sesion</button -->
+                    <input type="button" id="botoncito" value="Iniciar Sesion">
+                    <div class="login__container--remember-me">
+                        <label>
 						<input type="checkbox" name="" id="cbox1" value="checkbos">Recuerdame        
 					</label>
-					<a href="/">Olvide mi contraseña</a>
-				
-				</div>			
-			</form>
-			<!-- <section class="login__container--social-media">
+                        <a href="/">Olvide mi contraseña</a>
+
+                    </div>
+                </form>
+                <!-- <section class="login__container--social-media">
 				<div><img src="./IMG/instagram.png" alt="Instagram">Inicia sesion con Instagram</div>
 				<div><img src="./IMG/gorjeo.png" alt="Twitter">Inicia sesion con Twitter</div>
 			</section> -->
-			<p class="login__container--register">No tienes ninguna cuenta <a href="Registrate.html">Registrate</a></p>
-		</div>
-	</section>
-	<footer class="footer">
-		<a href="/">Terminos de uso</a>
-		<a href="/">Declaracion de privacidad</a>
-		<a href="/">Centro de ayuda</a>
-	</footer>
+                <p class="login__container--register">No tienes ninguna cuenta <input type="button" id="enlace" value="Registrate">
+                </p>
+            </div>
+        </section>
+        <footer class="footer">
+            <a href="/">Terminos de uso</a>
+            <a href="/">Declaracion de privacidad</a>
+            <a href="/">Centro de ayuda</a>
+        </footer>
 
-</div>
+    </div>
 
+    <!-- ------------------------------------Registro------------------------------- -->
 
+    <div id="contenedorcito" style="display: none;">
+        <section class="login">
+            <div class="login__container">
+                <h2 class="title">Cajero Automatico</h2>
+                <form class="login__container--form">
+                    <input id="user_2" type="text" placeholder="Nombre De Usuario">
+                    <input id="password_2" type="password" placeholder="Contraseña">
+                    <!-- <button id="botoncito" class="button">Iniciar sesion</button -->
+                    <input type="button" id="botoncito_2" value="Registrate">
+                    <div class="login__container--remember-me">
+                        <label>
+						<input type="checkbox" name="" id="cbox1" value="checkbos">Recuerdame      
+						<input type="button" id="botoncito_3" value="Iniciar Sesion">  
+					</label>
+                        <a href="/">Olvide mi contraseña</a>
 
-<!--  -----------------------------------------------------------------------------------                                          -->
-
-
-
-<div id="colorcito" style="display: none;">
-	<header class="header">
-		<!-- <img class="header__img" src="./IMG/Music.png"> -->
-	</header>
-	<section class="login">
-		<div class="login__container">
-			<h2 id="welcome"></h2>
-			<form class="login__container--form" >
-				<input type="button" id="ingresar_saldo" value="Ingresar Saldo" >
-				<input type="button" id="consultar_saldo" value="Consultar Saldo" >
-				<input type="button" id="retirar_saldo" value="Retirar Saldo" >		
-				</div>			
-			</form>
-			<!-- <section class="login__container--social-media">
+                    </div>
+                </form>
+                <!-- <section class="login__container--social-media">
 				<div><img src="./IMG/instagram.png" alt="Instagram">Inicia sesion con Instagram</div>
 				<div><img src="./IMG/gorjeo.png" alt="Twitter">Inicia sesion con Twitter</div>
 			</section> -->
-		</div>
-	</section>
-</div>
+            </div>
+        </section>
+        <footer class="footer">
+            <a href="/">Terminos de uso</a>
+            <a href="/">Declaracion de privacidad</a>
+            <a href="/">Centro de ayuda</a>
+        </footer>
+
+    </div>
+
+    <!--  -----------------------------------------------------------------------------------                                          -->
 
 
 
-	
+    <div id="colorcito" style="display: none;">
+        <section class="login">
+            <div class="login__container">
+                <h2 id="welcome"></h2>
+                <form class="login__container--form">
+                    <input type="button" id="ingresar_saldo" value="Ingresar Saldo">
+                    <input type="button" id="consultar_saldo" value="Consultar Saldo">
+                    <input type="button" id="retirar_saldo" value="Retirar Saldo">
+            </div>
+            </form>
+    </div>
+    </section>
+    </div>
 
-<script src="codigo.js"></script>
+
+
+
+
+    <script src="codigo.js"></script>
 </body>
+
 </html>
